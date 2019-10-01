@@ -16,9 +16,7 @@
             <div class="container">
                 <div class="header">
                     <img src="../images/logo_principal.jpg" alt="logo ceub">
-                    <i class="fas fa-user">
-                <h3>Nome do Aluno</h3>
-            </i>
+                    <i class="fas fa-user"><h3>Nome do Aluno</h3></i>
 
                 </div>
                 <div class="menu">
