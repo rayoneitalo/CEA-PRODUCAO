@@ -27,6 +27,7 @@
                                 Atendimento</span></i></button></li>
                         <li><button class="btn-menu" id="btn-menu"><i class="fas fa-archive"><span class="text-menu">Alugar
                                 Armário</span></i></button></li>
+                                <li><a href="http://localhost:8080/CEA/views/menuAdmin.jsp">Admin</a></li>
                     </ul>
                 </div>
 

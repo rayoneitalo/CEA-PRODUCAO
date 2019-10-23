@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Palanquin&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.container {
+    grid-gap: 10px;
+    padding: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 26% 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "h h h" "m main main" "m main main" ". main main";
+}
+
+div.header {
+    grid-area: h;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". img i";
+    justify-items: center;
+    align-items: center;
+}
+
+div.header h3 {
+    padding: 2%;
+    color: #552f80;
+    justify-self: center;
+    align-self: center;
+    margin: 5px;
+}
+
+div.header i {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    grid-area: i;
+    margin-right: 2px;
+    color: #552f80;
+}
+
+div.header img {
+    grid-area: img;
+}
+
+div.menu {
+    grid-area: m;
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 3px;
+    background: #552f80;
+    border-radius: 5px;
+    font-weight: bold;
+    justify-items: start;
+    align-self: flex-start;
+}
+
+div.menu ul {
+    display: grid;
+    grid-template-rows: .5fr .5fr .5fr;
+    height: auto;
+    background: #542e7f;
+}
+
+div.menu li {
+    margin: 25px 2px;
+    list-style: none;
+}
+
+button.btn-menu {
+    transition: .1s;
+    font-size: 12pt;
+    border: none;
+    background: #542e7f;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 4px;
+}
+
+button.btn-menu:hover {
+    font-size: 11.80pt;
+    transition: .1s;
+    background: #d1c3e04a;
+}
+
+button:focus {
+    outline: none;
+}
+
+span.text-menu {
+    margin: 5px;
+}
+
+
+/* 
+    Configs das divs de cadastro
+
+*/
+
+
+/* Padrão */
+
+div.main {
+    width: 100%;
+    height: 82vh;
+    grid-area: main;
+}
+
+div.main-cadeados {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 2%;
+}
+
+div.main-armarios {
+    background: #552f80;
+}
+
+div.main-periodoLetivo {
+    background: #552f80;
+}

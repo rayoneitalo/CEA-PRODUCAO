@@ -3,13 +3,13 @@ let divElementContainer = document.querySelector('.container');
 let divElementMap = document.querySelector('.map');
 let btnMenuElement = document.querySelector('button[id=btn-menu]');
 
-let btnCodCabinet1 = document.querySelector('button[id=btn-cod1');
-let btnCodCabinet2 = document.querySelector('button[id=btn-cod2');
-let btnCodCabinet3 = document.querySelector('button[id=btn-cod3');
-let btnCodCabinet4 = document.querySelector('button[id=btn-cod4');
-let btnCodCabinet5 = document.querySelector('button[id=btn-cod5');
-let btnCodCabinet6 = document.querySelector('button[id=btn-cod6');
-let btnCodCabinet7 = document.querySelector('button[id=btn-cod7');
+let btnCodCabinet1 = document.querySelector('button[id=btn-cod1]');
+let btnCodCabinet2 = document.querySelector('button[id=btn-cod2]');
+let btnCodCabinet3 = document.querySelector('button[id=btn-cod3]');
+let btnCodCabinet4 = document.querySelector('button[id=btn-cod4]');
+let btnCodCabinet5 = document.querySelector('button[id=btn-cod5]');
+let btnCodCabinet6 = document.querySelector('button[id=btn-cod6]');
+let btnCodCabinet7 = document.querySelector('button[id=btn-cod7]');
 
 let divElementCodCabinets1 = document.querySelector('div[id=cod1]');
 let divElementCodCabinets2 = document.querySelector('div[id=cod2]');
