@@ -123,6 +123,9 @@ div.main {
     grid-area: main;
 }
 
+
+/* Cadeados */
+
 div.main-cadeados {
     display: none;
     flex-direction: column;
@@ -133,13 +136,284 @@ div.main-cadeados {
     justify-items: flex-start;
     align-items: flex-start;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 2%;
 }
+
+div.form-cadeados {
+    padding: 1px;
+}
+
+div.form-cadeados form {
+    display: grid;
+}
+
+div.form-cadeados h1 {
+    color: #542e7f;
+    font-size: 20pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 38px;
+}
+
+div.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    align-items: center;
+}
+
+div.form-group label {
+    color: #542e7f;
+    font-size: 16pt;
+}
+
+div.form-group input {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    color: #542e7f;
+    font-size: 14pt;
+    padding: 10px 6px;
+}
+
+div.form-group input:hover {
+    transform: scale(.97);
+    transition: linear .1s;
+}
+
+div.form-group button {
+    color: #fff;
+    background: #542e7f;
+    border: 1px solid #fff;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 13pt;
+    text-transform: uppercase;
+}
+
+div.form-group button:hover {
+    transform: scale(.97);
+    transition: linear .1s;
+}
+
+
+/* Armarios */
 
 div.main-armarios {
-    background: #552f80;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
+div.form-armarios {
+    padding: 1px;
+}
+
+div.form-armarios form {
+    display: grid;
+}
+
+div.form-armarios h1 {
+    color: #542e7f;
+    font-size: 20pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 38px;
+}
+
+div.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    align-items: center;
+}
+
+div.form-group label {
+    color: #542e7f;
+    font-size: 16pt;
+}
+
+div.form-group input {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    color: #542e7f;
+    font-size: 14pt;
+    padding: 10px 6px;
+    width: 70%;
+}
+
+div.form-group input:hover {
+    transform: scale(.97);
+    transition: linear .1s;
+}
+
+div.form-group button {
+    color: #fff;
+    background: #542e7f;
+    border: 1px solid #fff;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 13pt;
+    text-transform: uppercase;
+}
+
+div.form-group button:hover {
+    transform: scale(.97);
+    transition: linear .1s;
+}
+
+
+/* Periodo Letivo */
+
 div.main-periodoLetivo {
-    background: #552f80;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+div.form-periodoLetivo {
+    padding: 1px;
+}
+
+div.form-periodoLetivo form {
+    display: grid;
+}
+
+div.form-periodoLetivo h1 {
+    color: #542e7f;
+    font-size: 20pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 38px;
+}
+
+div.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    align-items: center;
+}
+
+div.form-group label {
+    color: #542e7f;
+    font-size: 16pt;
+}
+
+div.form-group input {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    color: #542e7f;
+    font-size: 14pt;
+    padding: 10px 6px;
+    width: 70%;
+}
+
+div.form-group input:hover {
+    transform: scale(.97);
+    transition: linear .1s;
+}
+
+div.form-group button {
+    color: #fff;
+    background: #542e7f;
+    border: 1px solid #fff;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 13pt;
+    text-transform: uppercase;
+}
+
+div.form-group button:hover {
+    transform: scale(.97);
+    transition: linear .1s;
+}
+
+
+/* Mapa de Armários */
+
+div.main-mapaArmarios {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+div.form-mapaArmarios {
+    padding: 1px;
+}
+
+div.form-mapaArmarios form {
+    display: grid;
+}
+
+div.form-mapaArmarios h1 {
+    color: #542e7f;
+    font-size: 20pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 38px;
+}
+
+div.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    align-items: center;
+}
+
+div.form-group label {
+    color: #542e7f;
+    font-size: 16pt;
+}
+
+div.form-group input {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    color: #542e7f;
+    font-size: 14pt;
+    padding: 10px 6px;
+    width: 70%;
+}
+
+div.form-group input:hover {
+    transform: scale(.97);
+    transition: linear .1s;
+}
+
+div.form-group button {
+    color: #fff;
+    background: #542e7f;
+    border: 1px solid #fff;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 13pt;
+    text-transform: uppercase;
+}
+
+div.form-group button:hover {
+    transform: scale(.97);
+    transition: linear .1s;
 }

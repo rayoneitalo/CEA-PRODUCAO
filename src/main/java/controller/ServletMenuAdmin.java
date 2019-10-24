@@ -28,12 +28,10 @@ public class ServletMenuAdmin extends HttpServlet {
 		objCad.setCoSenha(senha);
 		try {
 			objCadDAO.create(objCad);
-			response.getWriter().println(objCad.getCoCadeado() + objCad.getCoSenha());
-			
+
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
+			response.sendRedirect("../err/errDataBase.html");
+		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

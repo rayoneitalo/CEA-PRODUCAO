@@ -27,15 +27,16 @@ div.container {
     text-align: center;
 }
 
-.form-login {
+.form-login-aluno {
     position: relative;
     top: 10%;
     margin: auto;
     justify-content: space-evenly;
-    display: grid;
+    display: none;
+    visibility: hidden;
 }
 
-.form-login input {
+.form-login-aluno input {
     border-radius: 4px;
     border: none;
     box-shadow: 0 0 0.1rem #000;
@@ -44,7 +45,7 @@ div.container {
     transition: ease-in-out .1s;
 }
 
-.form-login input:focus {
+.form-login-aluno input:focus {
     transition: ease-in-out .1s;
     border-bottom: 0.5px solid #a50abb;
     border-left: 0.5px solid #a50abb;
@@ -54,18 +55,59 @@ div.container {
     outline: 0;
 }
 
-.form-login label {
+.form-login-aluno label {
     margin: 0 5px;
     cursor: pointer;
     text-transform: uppercase;
 }
 
-.form-login label:hover {
+.form-login-aluno label:hover {
+    transform: scale(0.95);
+}
+
+
+/* Admin */
+
+.form-login-admin {
+    position: relative;
+    top: 10%;
+    margin: auto;
+    justify-content: space-evenly;
+    display: none;
+    visibility: hidden;
+}
+
+.form-login-admin input {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0.1rem #000;
+    padding: 5%;
+    margin: 10px 0;
+    transition: ease-in-out .1s;
+}
+
+.form-login-admin input:focus {
+    transition: ease-in-out .1s;
+    border-bottom: 0.5px solid #a50abb;
+    border-left: 0.5px solid #a50abb;
+    padding: 6%;
+    outline: none;
+    transform: scale(0.95);
+    outline: 0;
+}
+
+.form-login-admin label {
+    margin: 0 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form-login-admin label:hover {
     transform: scale(0.95);
 }
 
 h1 {
-    color: #a50abb;
+    color: #542e7f;
     margin-bottom: 50px;
     transition: 0.9s linear;
     transition-delay: 3s;
@@ -105,4 +147,35 @@ i {
     margin-right: 10px;
     font-size: 20pt;
     color: #8c8c8c;
+}
+
+div.options {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    opacity: 0;
+    transition: 0.9s linear;
+    transition-delay: 4s;
+    margin-bottom: 15px;
+}
+
+div.options button {
+    color: #fff;
+    background: #542e7f;
+    border: 1px solid #fff;
+    padding: 6px 26px;
+    border-radius: 8px;
+    font-size: 13pt;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.options button:hover {
+    transform: scale(.97);
+    transition: linear .1s;
+}
+
+div.options button:focus {
+    outline: none;
 }
