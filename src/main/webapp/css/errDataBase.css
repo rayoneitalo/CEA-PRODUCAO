@@ -8,14 +8,14 @@ body,
 html {
     width: 100%;
     height: 100%;
-    background: #ff3b18;
+    background: #542e7f;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 div.img-err {
     text-align: center;
     font-size: 27px;
-    color: #ffffff7d;
+    color: #000;
 }
 
 div.header {

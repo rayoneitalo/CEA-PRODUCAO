@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    
-    <!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
@@ -11,6 +12,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../css/spaceUser.css">
     <title>Espaço Aluno</title>
+    <script>
+        function submitForm(btn) {
+
+            const id = `${btn.id}`;
+            if (id == 'btn-cod1') {
+                document.getElementById('id').value = "btnBl1";
+            } else if (id == 'btn-cod2') {
+                document.getElementById('id').value = "btnBl2";
+            } else if (id == 'btn-cod3') {
+                document.getElementById('id').value = "btnBl3";
+            } else if (id == 'btn-cod4') {
+                document.getElementById('id').value = "btnBl4";
+            } else {
+                document.getElementById('id').value = "btnBl5";
+            }
+
+        }
+    </script>
 </head>
 
 <body>
@@ -22,13 +41,15 @@
         </div>
         <div class="menu">
             <ul>
-                <li><button class="btn-menu"><i class="fas fa-home"><span class="text-menu">Home</span></i></button>
+                <li>
+                    <button class="btn-menu"><i class="fas fa-home"><span class="text-menu">Home</span></i></button>
                 </li>
-                <li><button class="btn-menu"><i class="fas fa-desktop"><span class="text-menu">Auto
-                                Atendimento</span></i></button></li>
-                <li><button class="btn-menu" id="btn-menu"><i class="fas fa-archive"><span class="text-menu">Alugar
-                                Armário</span></i></button></li>
-
+                <li>
+                    <button class="btn-menu"><i class="fas fa-desktop"><span class="text-menu">Auto Atendimento</span></i></button>
+                </li>
+                <li>
+                    <button class="btn-menu" id="btn-menu"><i class="fas fa-archive"><span class="text-menu">Alugar Armário</span></i></button>
+                </li>
             </ul>
         </div>
 
@@ -36,13 +57,17 @@
             <div class="options">
                 <h3>Selecione o bloco </h3>
                 <div class="btns">
-                    <button class="btn-blocks" id="btn-cod1">Bloco 1</button>
-                    <button class="btn-blocks" id="btn-cod2">Bloco 2</button>
-                    <button class="btn-blocks" id="btn-cod3">Bloco 3</button>
-                    <button class="btn-blocks" id="btn-cod4">Bloco 4</button>
-                    <button class="btn-blocks" id="btn-cod5">Bloco 5</button>
-                    <button class="btn-blocks" id="btn-cod6">Bloco 6</button>
-                    <button class="btn-blocks" id="btn-cod7">Bloco 7</button>
+
+
+
+                    <form action="../../manager" method="POST">
+                        <button class="btn-blocks" id="btn-cod1" onclick="submitForm(this)">Bloco 1</button>
+                        <button class="btn-blocks" id="btn-cod2" onclick="submitForm(this)">Bloco 2</button>
+                        <button class="btn-blocks" id="btn-cod3" onclick="submitForm(this)">Bloco 3</button>
+                        <button class="btn-blocks" id="btn-cod4" onclick="submitForm(this)">Bloco 4</button>
+                        <button class="btn-blocks" id="btn-cod5" onclick="submitForm(this)">Bloco 5</button>
+                        <input name="id" type="hidden" id="id" value="btnBl1">
+                    </form>
                 </div>
 
             </div>

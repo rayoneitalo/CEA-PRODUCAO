@@ -6,21 +6,20 @@ package model.beans;
 public class Armario {
 
     private int idArmario;
-    private int nuArmario;
+    private String nuArmario;
     private String icAtivo;
-    private int LocalizacaoIdLocalizacao;
-
+    private String LocalizacaoIdLocalizacao;
 
     public Armario() {
     }
 
-    public Armario(int idArmario, int nuArmario, String icAtivo, int LocalizacaoIdLocalizacao) {
+
+    public Armario(int idArmario, String nuArmario, String icAtivo, String LocalizacaoIdLocalizacao) {
         this.idArmario = idArmario;
         this.nuArmario = nuArmario;
         this.icAtivo = icAtivo;
         this.LocalizacaoIdLocalizacao = LocalizacaoIdLocalizacao;
     }
-
 
 
     public int getIdArmario() {
@@ -31,11 +30,11 @@ public class Armario {
         this.idArmario = idArmario;
     }
 
-    public int getNuArmario() {
+    public String getNuArmario() {
         return this.nuArmario;
     }
 
-    public void setNuArmario(int nuArmario) {
+    public void setNuArmario(String nuArmario) {
         this.nuArmario = nuArmario;
     }
 
@@ -47,14 +46,13 @@ public class Armario {
         this.icAtivo = icAtivo;
     }
 
-    public int getLocalizacaoIdLocalizacao() {
+    public String getLocalizacaoIdLocalizacao() {
         return this.LocalizacaoIdLocalizacao;
     }
 
-    public void setLocalizacaoIdLocalizacao(int LocalizacaoIdLocalizacao) {
+    public void setLocalizacaoIdLocalizacao(String LocalizacaoIdLocalizacao) {
         this.LocalizacaoIdLocalizacao = LocalizacaoIdLocalizacao;
     }
-
-
+    
 
 }
