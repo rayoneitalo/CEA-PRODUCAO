@@ -6,22 +6,27 @@ package model.beans;
 public class Armario {
 
     private int idArmario;
-    private int nuArmario;
+    private String nuArmario;
     private String icAtivo;
-    private int LocalizacaoIdLocalizacao;
-
+    private String idLocalizacao;
 
     public Armario() {
     }
 
-    public Armario(int idArmario, int nuArmario, String icAtivo, int LocalizacaoIdLocalizacao) {
+    public String getIdLocalizacao() {
+        return idLocalizacao;
+    }
+
+    public void setIdLocalizacao(String idLocalizacao) {
+        this.idLocalizacao = idLocalizacao;
+    }
+
+    public Armario(int idArmario, String nuArmario, String icAtivo, String LocalizacaoIdLocalizacao) {
         this.idArmario = idArmario;
         this.nuArmario = nuArmario;
         this.icAtivo = icAtivo;
-        this.LocalizacaoIdLocalizacao = LocalizacaoIdLocalizacao;
+
     }
-
-
 
     public int getIdArmario() {
         return this.idArmario;
@@ -31,11 +36,11 @@ public class Armario {
         this.idArmario = idArmario;
     }
 
-    public int getNuArmario() {
+    public String getNuArmario() {
         return this.nuArmario;
     }
 
-    public void setNuArmario(int nuArmario) {
+    public void setNuArmario(String nuArmario) {
         this.nuArmario = nuArmario;
     }
 
@@ -46,15 +51,5 @@ public class Armario {
     public void setIcAtivo(String icAtivo) {
         this.icAtivo = icAtivo;
     }
-
-    public int getLocalizacaoIdLocalizacao() {
-        return this.LocalizacaoIdLocalizacao;
-    }
-
-    public void setLocalizacaoIdLocalizacao(int LocalizacaoIdLocalizacao) {
-        this.LocalizacaoIdLocalizacao = LocalizacaoIdLocalizacao;
-    }
-
-
 
 }

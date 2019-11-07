@@ -1,8 +1,7 @@
-package model.DAO;
+package model.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import data.ConnectionFactory;
@@ -13,9 +12,10 @@ import model.beans.Cadeado;
  */
 public class CadeadoDAO {
     private final Connection conn = ConnectionFactory.getConnection();
+    
 
-    public void create(Cadeado objCadeado) throws SQLException {
-        String sql = "INSERT INTO cea.cadeado (coCadeado, coSenha) VALUES (?,?)";
+    public void insert(Cadeado objCadeado) throws SQLException {
+        String sql = "INSERT INTO cea.cadeado(coCadeado, coSenha) VALUES(?,?)";
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, objCadeado.getCoCadeado());
             stmt.setString(2, objCadeado.getCoSenha());
@@ -25,6 +25,4 @@ public class CadeadoDAO {
             throw new RuntimeException("Erro ao cadastrar");
         }
     }
-
-
 }

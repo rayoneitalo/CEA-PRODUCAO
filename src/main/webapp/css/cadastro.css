@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Palanquin&display=swap');
+body,
+html {
+    font-family: 'Palanquin', sans-serif;
+    color: #542e7f;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+a {
+    background: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: #542e7f;
+    border: 1px solid #542e7f;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .1s linear;
+}
+
+a:hover,
+:focus {
+    transform: scale(.97);
+    background: #542e7f;
+    color: #fff;
+    outline: none;
+}
+
+h1 {
+    border-top: 40px;
+}

@@ -27,7 +27,23 @@ function renderCadeado() {
 
     divElementMainMapaArmarios.style.display = 'none';
     divElementMainMapaArmarios.style.visibility = 'hidden';
+
+    // ajaxCadeadoListagem();
 }
+
+// function ajaxCadeadoListagem() {
+
+//     // Ajax Pesquisa a listagem de cadeados
+//     //Vai numa servelt pesquisa todos os cadeados e monta um json e constoi uma lógica que com esse json monta um table html mostrando tudo
+//     $.get("suaServeletQueLista", function(responseJson) { // Execute Ajax GET request on URL of "someservlet" and execute the following function with Ajax response JSON...
+//         var $table = $("<table>").appendTo($("#listagemCadeadosAjax")); // Create HTML <table> element and append it to HTML DOM element with ID "somediv".
+//         $.each(responseJson, function(index, cadeado) { // Iterate over the JSON array.
+//             $("<tr>").appendTo($table) // Create HTML <tr> element, set its text content with currently iterated item and append it to the <table>.
+//                 .append($("<td>").text(cadeado.coCadeado)) // Create HTML <td> element, set its text content with id of currently iterated product and append it to the <tr>.
+//                 .append($("<td>").text(cadeado.coSenha)); // Create HTML <td> element, set its text content with price of currently iterated product and append it to the <tr>.
+//         });
+//     });
+// }
 
 // Função que renderiza o formulário para cadastro de armários
 function renderArmario() {

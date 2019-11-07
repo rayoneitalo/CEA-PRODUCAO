@@ -1,9 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
 <head>
@@ -11,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../css/menuAdmin.css">
-
+    <script src="../../js/jquery-3.4.1.min.js"></script>
     <title>Administrador</title>
 </head>
 
@@ -39,13 +38,15 @@
             <div class="main-cadeados">
                 <div class="form-cadeados">
                     <h1>Cadastrar Cadeados</h1>
-                    <form action="#" method="POST">
+                    <form action="../../manager" method="POST">
+                        <input name="id" type="hidden" value="1">
                         <div class="form-group">
                             <input type="text" id="txtCodigo" name="txtCod" required placeholder="Código do Cadeado">
                         </div>
                         <div class="form-group">
-                            <input type="password" id="txtSenha" name="txtSenha" required placeholder="Senha do Cadeado">
+                            <input type="text" id="txtSenha" name="txtSenha" required placeholder="Senha do Cadeado">
                         </div>
+
                         <div class="form-group">
                             <button type="submit">Cadastrar</button>
                             <!-- TODO: Gerar tela de confirmação de cadastro com os dados 
@@ -53,12 +54,14 @@
                             -->
                         </div>
                     </form>
+                    <div id="listagemCadeadosAjax"></div>
                 </div>
             </div>
             <div class="main-armarios">
                 <div class="form-armarios">
                     <h1>Cadastrar Armarios</h1>
-                    <form action="#" method="POST">
+                    <form action="../../manager" method="POST">
+                        <input name="id" type="hidden" value="2">
                         <div class="form-group">
                             <input type="number" id="txtNumber" name="txtCod" required placeholder="Numero do Armário">
                         </div>
@@ -77,7 +80,8 @@
             <div class="main-periodoLetivo">
                 <div class="form-periodoLetivo">
                     <h1>Cadastrar Período Letivo</h1>
-                    <form action="#" method="POST">
+                    <form action="../../manager" method="POST">
+                        <input name="id" type="hidden" value="3">
                         <div class="form-group">
                             <input type="number" required placeholder="Ano letivo">
                         </div>
@@ -99,7 +103,8 @@
             <div class="main-mapaArmarios">
                 <div class="form-mapaArmarios">
                     <h1>Cadastrar Mapa de Armários</h1>
-                    <form action="#" method="POST">
+                    <form action="../../manager" method="POST">
+                        <input name="id" type="hidden" value="4">
                         <div class="form-group">
                             <input type="text" required placeholder="Tipo">
                         </div>
