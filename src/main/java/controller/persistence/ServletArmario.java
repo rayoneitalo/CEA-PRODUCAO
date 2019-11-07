@@ -2,7 +2,6 @@ package controller.persistence;
 
 import java.io.IOException;
 
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,7 +33,6 @@ public class ServletArmario extends HttpServlet {
 			response.sendRedirect("routes/cadastro.html");
 		} catch (Exception e) {
 			response.sendRedirect("err/errDataBase.html");
-
 		}
 
 	}
