@@ -12,7 +12,6 @@ import model.beans.Cadeado;
  */
 public class CadeadoDAO {
     private final Connection conn = ConnectionFactory.getConnection();
-    
 
     public void insert(Cadeado objCadeado) throws SQLException {
         String sql = "INSERT INTO cea.cadeado(coCadeado, coSenha) VALUES(?,?)";

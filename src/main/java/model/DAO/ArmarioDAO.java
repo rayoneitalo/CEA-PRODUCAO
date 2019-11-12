@@ -17,11 +17,11 @@ public class ArmarioDAO {
     private final Connection conn = ConnectionFactory.getConnection();
 
     public void insert(Armario objArmario) throws SQLException {
-        String sql = "INSERT INTO cea.armario(nuArmario, idLocalizacao) VALUES(?, ?)";
+        String sql = "INSERT INTO cea.armario(localizacao, nuArmario) VALUES(?, ?)";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, objArmario.getNuArmario());
-            stmt.setString(2, objArmario.getIdLocalizacao());
+            stmt.setString(1, objArmario.getLocalizacao());
+            stmt.setInt(2, objArmario.getIdArmario());
             stmt.executeUpdate();
             stmt.close();
 
@@ -41,8 +41,8 @@ public class ArmarioDAO {
 
             while (rs.next()) {
                 Armario objArmario = new Armario();
-                objArmario.setNuArmario(rs.getString("nuArmario"));
-                objArmario.setIdLocalizacao(rs.getString("idLocalizacao"));
+                objArmario.setNuArmario(rs.getInt("nuArmario"));
+                objArmario.setLocalizacao(rs.getString("localizacao"));
 
                 lista.add(objArmario);
                 

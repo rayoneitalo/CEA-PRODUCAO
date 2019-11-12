@@ -63,10 +63,10 @@
                     <form action="../../manager" method="POST">
                         <input name="id" type="hidden" value="2">
                         <div class="form-group">
-                            <input type="number" id="txtNumber" name="txtCod" required placeholder="Numero do Armário">
+                            <input type="number" id="txtNumber" name="txtNumber" required placeholder="Numero do Armário">
                         </div>
                         <div class="form-group">
-                            <input type="text" id="txtLocal" name="txtSenha" required placeholder="Localização">
+                            <input type="text" id="txtLocal" name="txtLocal" required placeholder="Localização">
                         </div>
                         <div class="form-group">
                             <button type="submit">Cadastrar</button>

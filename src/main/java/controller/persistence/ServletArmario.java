@@ -22,11 +22,15 @@ public class ServletArmario extends HttpServlet {
 		Armario objArmario = new Armario();
 		ArmarioDAO objArmarioDAO = new ArmarioDAO();
 
-		String txtLoc = request.getParameter("txtLoc");
-		String txtNumber = request.getParameter("txtNumber");
+		String localizacoArmario = request.getParameter("txtLocal");
+		try {
+			int numeroArmario = Integer.parseInt(request.getParameter("txtNumber"));
+			objArmario.setNuArmario(numeroArmario);
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		}
 
-		objArmario.setNuArmario(txtNumber);
-		objArmario.setIdLocalizacao(txtLoc);
+		objArmario.setLocalizacao(localizacoArmario);
 
 		try {
 			objArmarioDAO.insert(objArmario);

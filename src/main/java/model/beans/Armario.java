@@ -6,26 +6,20 @@ package model.beans;
 public class Armario {
 
     private int idArmario;
-    private String nuArmario;
-    private String icAtivo;
-    private String idLocalizacao;
+    private String Localizacao;
+    private int nuArmario;
+    private boolean icAtivo;
+    private int idCadeado;
 
     public Armario() {
     }
 
-    public String getIdLocalizacao() {
-        return idLocalizacao;
-    }
-
-    public void setIdLocalizacao(String idLocalizacao) {
-        this.idLocalizacao = idLocalizacao;
-    }
-
-    public Armario(int idArmario, String nuArmario, String icAtivo, String LocalizacaoIdLocalizacao) {
+    public Armario(int idArmario, String Localizacao, int nuArmario, boolean icAtivo, int idCadeado) {
         this.idArmario = idArmario;
+        this.Localizacao = Localizacao;
         this.nuArmario = nuArmario;
         this.icAtivo = icAtivo;
-
+        this.idCadeado = idCadeado;
     }
 
     public int getIdArmario() {
@@ -36,20 +30,39 @@ public class Armario {
         this.idArmario = idArmario;
     }
 
-    public String getNuArmario() {
+    public String getLocalizacao() {
+        return this.Localizacao;
+    }
+
+    public void setLocalizacao(String Localizacao) {
+        this.Localizacao = Localizacao;
+    }
+
+    public int getNuArmario() {
         return this.nuArmario;
     }
 
-    public void setNuArmario(String nuArmario) {
+    public void setNuArmario(int nuArmario) {
         this.nuArmario = nuArmario;
     }
 
-    public String getIcAtivo() {
+    public boolean isIcAtivo() {
         return this.icAtivo;
     }
 
-    public void setIcAtivo(String icAtivo) {
+    public boolean getIcAtivo() {
+        return this.icAtivo;
+    }
+
+    public void setIcAtivo(boolean icAtivo) {
         this.icAtivo = icAtivo;
     }
 
+    public int getIdCadeado() {
+        return this.idCadeado;
+    }
+
+    public void setIdCadeado(int idCadeado) {
+        this.idCadeado = idCadeado;
+    }
 }

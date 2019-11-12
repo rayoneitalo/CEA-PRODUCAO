@@ -8,6 +8,7 @@ CREATE TABLE ALUNO (
     nmTurno  varchar(30),
     nmCampus varchar(45)
 );
+/* DROP TABLE ALUNO */
 
 /* TABELA CADEDO */
 CREATE TABLE CADEADO (
@@ -16,6 +17,7 @@ CREATE TABLE CADEADO (
     coSenha   varchar(45),
     icAtivo   boolean
 );
+/* DROP TABLE CADEADO */
 
 /* TABELA LOCALIZAÇÃO */
 CREATE TABLE LOCALIZACAO (
@@ -24,15 +26,19 @@ CREATE TABLE LOCALIZACAO (
     icAtivo       boolean,
     coLocalizacao varchar(45)
 );
+/* DROP TABLE LOCALIZACAO */
 
 /* TABELA ARMARIO */
 CREATE TABLE ARMARIO (
-	idArmario     int primary key auto_increment,
-	idLocalizacao varchar(45) not null,
-    nuArmario     int,
-    icAtivo       boolean,
-	constraint FK_LOCALIZACAO foreign key (idLocalizacao) references LOCALIZACAO(idLocalizacao)												
+	idArmario   int primary key auto_increment,
+	Localizacao varchar(45) not null,
+    nuArmario   int,
+    icAtivo     boolean,
+    IdCadeado   int null,
+				foreign key FK_ARMARIO_CADEADO(idCadeado) 
+                references CADEADO(idCadeado)
 );
+/* DROP TABLE ARMARIO */
 
 
 
