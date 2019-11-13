@@ -7,14 +7,14 @@ public class Armario {
 
     private int idArmario;
     private String Localizacao;
-    private int nuArmario;
+    private Integer nuArmario;
     private boolean icAtivo;
     private int idCadeado;
 
     public Armario() {
     }
 
-    public Armario(int idArmario, String Localizacao, int nuArmario, boolean icAtivo, int idCadeado) {
+    public Armario(int idArmario, String Localizacao, Integer nuArmario, boolean icAtivo, int idCadeado) {
         this.idArmario = idArmario;
         this.Localizacao = Localizacao;
         this.nuArmario = nuArmario;
@@ -38,11 +38,11 @@ public class Armario {
         this.Localizacao = Localizacao;
     }
 
-    public int getNuArmario() {
+    public Integer getNuArmario() {
         return this.nuArmario;
     }
 
-    public void setNuArmario(int nuArmario) {
+    public void setNuArmario(Integer nuArmario) {
         this.nuArmario = nuArmario;
     }
 

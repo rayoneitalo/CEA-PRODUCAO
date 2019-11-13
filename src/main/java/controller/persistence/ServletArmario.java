@@ -23,13 +23,9 @@ public class ServletArmario extends HttpServlet {
 		ArmarioDAO objArmarioDAO = new ArmarioDAO();
 
 		String localizacoArmario = request.getParameter("txtLocal");
-		try {
-			int numeroArmario = Integer.parseInt(request.getParameter("txtNumber"));
-			objArmario.setNuArmario(numeroArmario);
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
-		}
-
+		Integer numeroArmario = Integer.valueOf(request.getParameter("txtNumber"));
+		
+		objArmario.setNuArmario(numeroArmario);
 		objArmario.setLocalizacao(localizacoArmario);
 
 		try {

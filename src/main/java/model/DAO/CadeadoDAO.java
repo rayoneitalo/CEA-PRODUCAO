@@ -20,6 +20,7 @@ public class CadeadoDAO {
             stmt.setString(2, objCadeado.getCoSenha());
             stmt.executeUpdate();
             stmt.close();
+            conn.close();
         } catch (Exception e) {
             throw new RuntimeException("Erro ao cadastrar");
         }

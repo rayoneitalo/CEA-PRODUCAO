@@ -26,8 +26,8 @@ public class Manager extends HttpServlet {
         String action = request.getParameter("id");
         switch (action) {
         case "1":
-            objServletCadeado.doGet(request, response);
-            break;
+        objServletCadeado.doGet(request, response);
+        break;
         case "2":
             objServletArmario.doGet(request, response);
 
@@ -40,7 +40,6 @@ public class Manager extends HttpServlet {
             break;
         case "btnBl1":
             objServletArmario.listar(request, response);
-            // objServletArmario.listar(request, response);
             break;
         default:
             response.getWriter().println(action + "ete");

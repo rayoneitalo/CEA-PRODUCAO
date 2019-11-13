@@ -21,9 +21,10 @@ public class ArmarioDAO {
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, objArmario.getLocalizacao());
-            stmt.setInt(2, objArmario.getIdArmario());
+            stmt.setInt(2, objArmario.getNuArmario());
             stmt.executeUpdate();
             stmt.close();
+            conn.close();
 
         } catch (Exception e) {
             throw new RuntimeException("Erro ao cadastrar");
