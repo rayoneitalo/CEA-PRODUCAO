@@ -66,8 +66,12 @@
                             <input type="number" id="txtNumber" name="txtNumber" required placeholder="Numero do Armário">
                         </div>
                         <div class="form-group">
+                            <input type="number" id="txtLocal" name="txtbloc" required placeholder="Bloco">
+                        </div>
+                        <div class="form-group">
                             <input type="text" id="txtLocal" name="txtLocal" required placeholder="Localização">
                         </div>
+
                         <div class="form-group">
                             <button type="submit">Cadastrar</button>
                             <!-- TODO: Gerar tela de confirmação de cadastro com os dados 

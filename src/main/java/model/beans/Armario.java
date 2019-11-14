@@ -8,19 +8,23 @@ public class Armario {
     private int idArmario;
     private String Localizacao;
     private Integer nuArmario;
+    private Integer bloco;
     private boolean icAtivo;
     private int idCadeado;
 
     public Armario() {
     }
 
-    public Armario(int idArmario, String Localizacao, Integer nuArmario, boolean icAtivo, int idCadeado) {
+
+    public Armario(int idArmario, String Localizacao, Integer nuArmario, Integer bloco, boolean icAtivo, int idCadeado) {
         this.idArmario = idArmario;
         this.Localizacao = Localizacao;
         this.nuArmario = nuArmario;
+        this.bloco = bloco;
         this.icAtivo = icAtivo;
         this.idCadeado = idCadeado;
     }
+
 
     public int getIdArmario() {
         return this.idArmario;
@@ -46,6 +50,14 @@ public class Armario {
         this.nuArmario = nuArmario;
     }
 
+    public Integer getBloco() {
+        return this.bloco;
+    }
+
+    public void setBloco(Integer bloco) {
+        this.bloco = bloco;
+    }
+
     public boolean isIcAtivo() {
         return this.icAtivo;
     }
@@ -65,4 +77,6 @@ public class Armario {
     public void setIdCadeado(int idCadeado) {
         this.idCadeado = idCadeado;
     }
+
+    
 }

@@ -43,16 +43,18 @@
                 <table class="table">
                     <tr>
                         <th>Numero</th>
+                        <th>Bloco</th>
                         <th>Localização</th>
-                        <th>Ações</th>
+                        <th>Opções</th>
                     </tr>
 
                     <c:forEach var="linha" items="${lista}">
                         <tr>
                             <td>${linha.nuArmario}</td>
+                            <td>${linha.bloco}</td>
                             <td>${linha.localizacao}</td>
                             <td>
-                                <button class="btn">Agendar</button>
+                                <button class="btn" onclick="renderbtnCommitmentTerm()">Agendar</button>
                             </td>
 
                         </tr>

@@ -26,8 +26,8 @@ public class Manager extends HttpServlet {
         String action = request.getParameter("id");
         switch (action) {
         case "1":
-        objServletCadeado.doGet(request, response);
-        break;
+            objServletCadeado.doGet(request, response);
+            break;
         case "2":
             objServletArmario.doGet(request, response);
 
@@ -41,8 +41,20 @@ public class Manager extends HttpServlet {
         case "btnBl1":
             objServletArmario.listar(request, response);
             break;
+        case "btnBl2":
+            objServletArmario.listar2(request, response);
+            break;
+        case "btnBl3":
+            objServletArmario.listar(request, response);
+            break;
+        case "btnBl4":
+            objServletArmario.listar(request, response);
+            break;
+        case "btnBl5":
+            objServletArmario.listar(request, response);
+            break;
         default:
-            response.getWriter().println(action + "ete");
+            response.sendRedirect("routes/cadastro.html");
         }
 
     }

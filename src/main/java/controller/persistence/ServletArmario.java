@@ -24,9 +24,11 @@ public class ServletArmario extends HttpServlet {
 
 		String localizacoArmario = request.getParameter("txtLocal");
 		Integer numeroArmario = Integer.valueOf(request.getParameter("txtNumber"));
+		Integer blocoArmario = Integer.valueOf(request.getParameter("txtbloc"));
 		
 		objArmario.setNuArmario(numeroArmario);
 		objArmario.setLocalizacao(localizacoArmario);
+		objArmario.setBloco(blocoArmario);
 
 		try {
 			objArmarioDAO.insert(objArmario);
@@ -41,6 +43,14 @@ public class ServletArmario extends HttpServlet {
 		ArmarioDAO objArmarioDAO = new ArmarioDAO();
 
 		request.setAttribute("lista", objArmarioDAO.getLista());
+		request.getRequestDispatcher("routes/listaArmarios.jsp").forward(request, response);
+
+	}
+
+	public void listar2(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ArmarioDAO objArmarioDAO = new ArmarioDAO();
+
+		request.setAttribute("lista", objArmarioDAO.getLista2());
 		request.getRequestDispatcher("routes/listaArmarios.jsp").forward(request, response);
 
 	}

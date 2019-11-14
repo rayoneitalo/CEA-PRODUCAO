@@ -31,7 +31,8 @@ CREATE TABLE LOCALIZACAO (
 /* TABELA ARMARIO */
 CREATE TABLE ARMARIO (
 	idArmario   int primary key auto_increment,
-	Localizacao varchar(45) not null,
+	localizacao varchar(45) not null,
+    bloco       int not null,
     nuArmario   int,
     icAtivo     boolean,
     IdCadeado   int null,
