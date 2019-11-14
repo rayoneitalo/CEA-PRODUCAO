@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Palanquin&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: none;
 }
 
+body,
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 div.content-container {
     position: absolute;
-    top: 10%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -10%);
+    height: auto;
+    transform: translate(-50%, -14%);
     box-shadow: 1px 1px 2px 0px #0000008c;
     min-width: 700px;
-    padding: 5px;
+    padding: 20px;
     visibility: hidden;
 }
 
@@ -36,7 +43,7 @@ section.body {
     border-top: 1px solid red;
 }
 
-section.body p {
+section.body h4 {
     margin: 10px;
 }
 
@@ -55,6 +62,7 @@ section.footer {
     display: inline-flex;
     justify-content: center;
     width: 100%;
+    margin-top: 20px;
 }
 
 button.btn-commitmentTerm {

@@ -38,7 +38,7 @@ public class ArmarioDAO {
         try {
             List<Armario> lista = new ArrayList<>();
 
-            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM cea.armario");
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM cea.armario ORDER BY nuArmario ASC");
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
