@@ -54,5 +54,26 @@ public class ServletArmario extends HttpServlet {
 		request.getRequestDispatcher("routes/listaArmarios.jsp").forward(request, response);
 
 	}
+	public void listar3(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ArmarioDAO objArmarioDAO = new ArmarioDAO();
+
+		request.setAttribute("lista", objArmarioDAO.getLista3());
+		request.getRequestDispatcher("routes/listaArmarios.jsp").forward(request, response);
+
+	}
+	public void listar4(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ArmarioDAO objArmarioDAO = new ArmarioDAO();
+
+		request.setAttribute("lista", objArmarioDAO.getLista4());
+		request.getRequestDispatcher("routes/listaArmarios.jsp").forward(request, response);
+
+	}
+	public void listar5(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ArmarioDAO objArmarioDAO = new ArmarioDAO();
+
+		request.setAttribute("lista", objArmarioDAO.getLista5());
+		request.getRequestDispatcher("routes/listaArmarios.jsp").forward(request, response);
+
+	}
 
 }

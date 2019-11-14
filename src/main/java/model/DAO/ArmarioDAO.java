@@ -84,4 +84,76 @@ public class ArmarioDAO {
         }
     }
 
+    public List<Armario> getLista3() {
+        try {
+            List<Armario> lista = new ArrayList<>();
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM cea.armario WHERE bloco = 3");
+            ResultSet rs = stmt.executeQuery();
+
+            while(rs.next()) {
+                Armario objArmario = new Armario();
+                objArmario.setNuArmario(rs.getInt("nuArmario"));
+                objArmario.setLocalizacao(rs.getString("localizacao"));
+                objArmario.setBloco(rs.getInt("bloco"));
+
+                lista.add(objArmario);
+            }
+
+            rs.close();
+            stmt.close();
+
+            return lista;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<Armario> getLista4() {
+        try {
+            List<Armario> lista = new ArrayList<>();
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM cea.armario WHERE bloco = 4");
+            ResultSet rs = stmt.executeQuery();
+
+            while(rs.next()) {
+                Armario objArmario = new Armario();
+                objArmario.setNuArmario(rs.getInt("nuArmario"));
+                objArmario.setLocalizacao(rs.getString("localizacao"));
+                objArmario.setBloco(rs.getInt("bloco"));
+
+                lista.add(objArmario);
+            }
+
+            rs.close();
+            stmt.close();
+
+            return lista;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<Armario> getLista5() {
+        try {
+            List<Armario> lista = new ArrayList<>();
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM cea.armario WHERE bloco = 5");
+            ResultSet rs = stmt.executeQuery();
+
+            while(rs.next()) {
+                Armario objArmario = new Armario();
+                objArmario.setNuArmario(rs.getInt("nuArmario"));
+                objArmario.setLocalizacao(rs.getString("localizacao"));
+                objArmario.setBloco(rs.getInt("bloco"));
+
+                lista.add(objArmario);
+            }
+
+            rs.close();
+            stmt.close();
+
+            return lista;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }

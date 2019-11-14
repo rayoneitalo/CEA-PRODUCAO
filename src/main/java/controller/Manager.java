@@ -45,13 +45,13 @@ public class Manager extends HttpServlet {
             objServletArmario.listar2(request, response);
             break;
         case "btnBl3":
-            objServletArmario.listar(request, response);
+            objServletArmario.listar3(request, response);
             break;
         case "btnBl4":
-            objServletArmario.listar(request, response);
+            objServletArmario.listar4(request, response);
             break;
         case "btnBl5":
-            objServletArmario.listar(request, response);
+            objServletArmario.listar5(request, response);
             break;
         default:
             response.sendRedirect("routes/cadastro.html");
