@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+div.content-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    box-shadow: 1px 1px 2px 0px #0000008c;
+    min-width: 700px;
+    padding: 5px;
+    visibility: hidden;
+}
+
+div.content-container h2 {
+    text-align: center;
+    border-bottom: 1px solid #0000008c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+div.content-header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section.body {
+    text-align: left;
+    border-top: 1px solid red;
+}
+
+section.body p {
+    margin: 10px;
+}
+
+div.content-information {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+div.information-groups {
+    display: grid;
+}
+
+section.footer {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button.btn-commitmentTerm {
+    color: white;
+    background: #552f80;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 4px;
+    border: none;
+    margin: 1%;
+    font-size: 17pt;
+    cursor: pointer;
+}
+
+button.btn-commitmentTerm:hover {
+    transform: scale(0.95);
+    transition: all 0.1s ease 0s;
+}

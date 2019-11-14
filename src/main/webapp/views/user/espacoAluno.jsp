@@ -74,37 +74,7 @@
                     </form>
                 </div>
             </div>
-            <!-- <div class="map-cabinets">
-                <div class="cod-cabinets" id="cod1">
-                    <h3>Armários-Bloco 1</h3>
-                    <img src="../../images/example_map.PNG" alt="">
-                </div>
-                <div class="cod-cabinets" id="cod2">
-                    <h3>Armários-Bloco 2</h3>
-                    <img src=".../../images/example_map.PNG" alt="">
-                </div>
-                <div class="cod-cabinets" id="cod3">
-                    <h3>Armários-Bloco 3</h3>
-                    <img src="../../images/example_map.PNG" alt="">
-                </div>
-                <div class="cod-cabinets" id="cod4">
-                    <h3>Armários-Bloco 4</h3>
-                    <img src="../../images/example_map.PNG" alt="">
-                </div>
-                <div class="cod-cabinets" id="cod5">
-                    <h3>Armários-Bloco 5</h3>
-                    <img src="../../images/example_map.PNG" alt="">
-                </div>
-                <div class="cod-cabinets" id="cod6">
-                    <h3>Armários-Bloco 6</h3>
-                    <img src="../../images/example_map.PNG" alt="">
-                </div>
-                <div class="cod-cabinets" id="cod7">
-                    <h3>Armários-Bloco 7</h3>
-                    <img src="../../images/example_map.PNG" alt="">
-                </div>
 
-            </div> -->
         </div>
     </div>
     <script src="../../js/spaceUser.js"></script>

@@ -23,16 +23,6 @@ let divElementCodCabinets7 = document.querySelector('div[id=cod7]');
 // Chama a função que renderiza a div map
 btnMenuElement.onclick = rederDivMap;
 
-// Chama as funções que renderizam as divs Cabinets
-// btnCodCabinet1.onclick = cabinets1;
-// btnCodCabinet2.onclick = cabinets2;
-// btnCodCabinet3.onclick = cabinets3;
-// btnCodCabinet4.onclick = cabinets4;
-// btnCodCabinet5.onclick = cabinets5;
-// btnCodCabinet6.onclick = cabinets6;
-// btnCodCabinet7.onclick = cabinets7;
-
-// Função que renderiza a div map
 // TODO Essa função não está terminada
 function rederDivMap() {
     divElementMap.style.display = "grid";
@@ -163,88 +153,3 @@ function cabinets5() {
     divElementCodCabinets7.style.display = "none";
     divElementCodCabinets7.style.visibility = "hidden";
 }
-// Função que renderiza a divCabinet6
-
-// function cabinets6() {
-//     divElementCodCabinets1.style.display = "none";
-//     divElementCodCabinets1.style.visibility = "hidden";
-
-//     divElementCodCabinets2.style.display = "none";
-//     divElementCodCabinets2.style.visibility = "hidden";
-
-//     divElementCodCabinets3.style.display = "none";
-//     divElementCodCabinets3.style.visibility = "hidden";
-
-//     divElementCodCabinets4.style.display = "none";
-//     divElementCodCabinets4.style.visibility = "hidden";
-
-//     divElementCodCabinets5.style.display = "none";
-//     divElementCodCabinets5.style.visibility = "hidden";
-
-//     divElementCodCabinets6.style.display = "grid";
-//     divElementCodCabinets6.style.visibility = "visible";
-
-//     divElementCodCabinets7.style.display = "none";
-//     divElementCodCabinets7.style.visibility = "hidden";
-
-
-// }
-// // Função que renderiza a divCabinet7
-
-// function cabinets7() {
-//     divElementCodCabinets1.style.display = "none";
-//     divElementCodCabinets1.style.visibility = "hidden";
-
-//     divElementCodCabinets2.style.display = "none";
-//     divElementCodCabinets2.style.visibility = "hidden";
-
-//     divElementCodCabinets3.style.display = "none";
-//     divElementCodCabinets3.style.visibility = "hidden";
-
-//     divElementCodCabinets4.style.display = "none";
-//     divElementCodCabinets4.style.visibility = "hidden";
-
-//     divElementCodCabinets5.style.display = "none";
-//     divElementCodCabinets5.style.visibility = "hidden";
-
-//     divElementCodCabinets6.style.display = "none";
-//     divElementCodCabinets6.style.visibility = "hidden";
-
-//     divElementCodCabinets7.style.display = "grid";
-//     divElementCodCabinets7.style.visibility = "visible";
-
-
-// }
-
-
-
-// !Função que determina qual divCabinet irá ser renderizada
-// !Inacabada
-// function rederCabits() {
-//     var option;
-
-//     switch (option) {
-//         case option == 'cod1':
-//             function cabinets1() {
-//                 divElementCodCabinets1.style.display = "flex";
-//                 divElementCodCabinets1.style.visibility = "visible";
-//                 option = 'cod1';
-//             }
-//             break;
-
-//         case option == 'cod2':
-//             function cabinets2() {
-//                 divElementCodCabinets2.style.display = "flex";
-//                 divElementCodCabinets2.style.visibility = "visible";
-//                 option = 'cod2';
-//             }
-//             break;
-
-//         case option == 'cod3':
-//             function cabinets3() {
-//                 divElementCodCabinets3.style.display = "flex";
-//                 divElementCodCabinets3.style.visibility = "visible";
-//                 option = 'cod3';
-//             }
-//     }
-// }
